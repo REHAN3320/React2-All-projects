@@ -1,0 +1,8 @@
+.InputContainer{
+  margin: 20px;
+}
+.Input{
+  width: 100% ;
+  font-size:30px;
+  background-color: aquamarine;
+}

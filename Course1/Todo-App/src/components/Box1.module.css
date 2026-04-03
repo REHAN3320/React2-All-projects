@@ -1,0 +1,8 @@
+.Box1{
+ border: 2px solid black;
+ border-radius: 15px;
+ margin: 10px;
+ text-align: center;
+ background-color:aquamarine;
+ min-width: 600px;
+}

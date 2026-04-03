@@ -1,0 +1,9 @@
+input {
+  width: 100%;
+}
+.InputText{
+  max-width: 500px;
+}
+.InputDate{
+  max-width: 350px;
+}

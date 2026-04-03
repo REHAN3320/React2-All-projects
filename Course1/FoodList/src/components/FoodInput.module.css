@@ -1,0 +1,9 @@
+.FoodInput{
+  width: 90%;
+  margin: 10px 5px;
+  padding: 5px;
+  
+}
+.FoodInputContainer{
+  justify-content: center;
+  display:flex ;}

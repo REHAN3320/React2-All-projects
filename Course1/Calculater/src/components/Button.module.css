@@ -1,0 +1,11 @@
+.buttonContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Button{
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+  background-color: aquamarine;
+}
