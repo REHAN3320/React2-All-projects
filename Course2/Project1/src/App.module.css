@@ -1,0 +1,10 @@
+body{
+ background-color: black;
+}
+*{
+  color: white;
+}
+.bigContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
