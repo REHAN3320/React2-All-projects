@@ -1,21 +1,52 @@
-import css from "./App.module.css";
-import ErrorMessage from "./components/ErrorMeassage";
-import FoodItems from "./components/FoodItems";
-import Container from "./components/Container";
-import FoodInput from "./components/FoodInput";
-function App() {
-  let foodItems = ["Steak", "Apple", "Banana", "Pineapple", "Potato"];
+import { useState } from "react";
+import Heading from "./Components/Heading";
+import ItemMap from "./Components/ItemMap";
+const App = () => {
+  let NewInput = "";
+  const [foodList, setfoodList] = useState([
+    "Bread",
+    "Apple",
+    "Meat",
+    "Vegetables",
+    "Milk",
+  ]);
+
+  const InputValue = (event) => {
+    NewInput = event.target.value;
+  };
+
+  const EmptyInput = (event) => {
+    event.target.value = "";
+  };
+
+  const AddItem = () => {
+    if (NewInput === "") {
+      alert("Please enter a new Product!");
+    } else {
+      let newFoodList = [NewInput, ...foodList];
+      setfoodList(newFoodList);
+    }
+  };
+
   return (
     <>
-      <Container>
-        <Container>
-          <h1 className={css.heading}>Healthy Food</h1>
-        </Container>
-        <ErrorMessage items={foodItems}></ErrorMessage>
-        <FoodInput></FoodInput>
-        <FoodItems items={foodItems}></FoodItems>
-      </Container>
+      <div
+        className="w-screen min-h-screen bg-amber-500 p-10 flex justify-center items-center
+      text-white "
+      >
+        <div className="  bg-amber-700 border-2 border-black w-fit h-fit p-5 ">
+          <Heading
+            Foodlist={foodList}
+            InputValue={InputValue}
+            AddItem={AddItem}
+            EmptyInput={EmptyInput}
+          ></Heading>
+          <ItemMap FoodList={foodList}></ItemMap>
+        </div>
+      </div>
+      <div className="w-screen h-screen bg-amber-800"></div>
     </>
   );
-}
+};
+
 export default App;

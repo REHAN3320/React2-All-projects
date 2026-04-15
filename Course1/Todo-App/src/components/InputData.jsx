@@ -9,7 +9,7 @@ function InputData() {
             type="text"
             placeholder="Enter Text Here"
             className={`${css.InputText} input-text`}
-            readOnly
+            required
           />
         </div>
         <div className={`col-4 my-col`}>
