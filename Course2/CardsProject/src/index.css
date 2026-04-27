@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+}
+html , body {
+  height: 100%;
+  width: 100%;
+}
+.Parent{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+.card{
+  padding: 10px;
+  height: 400px;
+  width: 300px;
+  background-color: rgb(62, 62, 62);
+  border-radius: 20px;
+}
+.logoImage{
+  height: 40px;
+  width: 40px;
+  border-radius: 55%;
+  border: 2px solid ;
+}
+.top{
+  padding: 10px;
+  background-color:rgb(116, 118, 117);
+  border: 2px solid ;
+  border-radius:50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.SaveButton{
+  width: 50px;
+  border: 2px solid ;
+  border-radius: 5;
+  background-color: rgb(205, 205, 205);
+}
+.center h3{
+  padding: 0px 10px;
+  padding-top: 10px;
+  color: white;
+}
+.center h2{
+  padding: 0px 10px;
+  padding-top: 10px;
+  color: white;
+}
+.h4{
+  margin: 10px;
+  color: white;
+}

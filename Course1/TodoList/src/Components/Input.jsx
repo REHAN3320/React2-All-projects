@@ -6,7 +6,10 @@ const Input = ({
   DateValue,
 }) => {
   return (
-    <div className="bg-blue-700 p-3 px-7 flex justify-between w-full h-15 border-2 border-blue-950 shadow-inner shadow-blue-800">
+    <form
+      className="bg-blue-700 p-3 px-7 flex justify-between w-full h-15 border-2 border-blue-950 shadow-inner shadow-blue-800"
+      onSubmit={AddObject}
+    >
       {/* INput Text                         */}
       <input
         type="text"
@@ -26,13 +29,10 @@ const Input = ({
       />
 
       {/* Add Button                         */}
-      <button
-        className="border-2 p-1 px-4 bg-green-700 hover:scale-105 ease-in-out duration-100 hover:bg-green-800 border-blue-950"
-        onClick={AddObject}
-      >
+      <button className="border-2 p-1 px-4 bg-green-700 hover:scale-105 ease-in-out duration-100 hover:bg-green-800 border-blue-950">
         ADD
       </button>
-    </div>
+    </form>
   );
 };
 

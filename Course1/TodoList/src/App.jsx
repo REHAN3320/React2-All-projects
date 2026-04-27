@@ -1,14 +1,14 @@
 import Heading from "./Components/Heading";
 import Input from "./Components/Input";
 import DisplayList from "./Components/DisplayList";
-import { useState } from "react";
+import { useRef, useState } from "react";
 const App = () => {
   const [InputValue, setInputValue] = useState("");
   const [DateValue, setDateValue] = useState("");
   const [TodoList, setTodoList] = useState([
-    { Text: "Exercise", Date: "04/12/2002" },
-    { Text: "HomeWork", Date: "12/29/2016" },
-    { Text: "Movie", Date: "01/12/2024" },
+    { Text: "Exercise", Date: "2002-04-12" },
+    { Text: "HomeWork", Date: "2016-12-29" },
+    { Text: "Movie", Date: "2024-01-12" },
   ]);
 
   const InputTextData = (event) => {
@@ -17,7 +17,8 @@ const App = () => {
   const InputDateData = (event) => {
     setDateValue(event.target.value);
   };
-  const AddObject = () => {
+  const AddObject = (event) => {
+    event.preventDefault();
     if (InputValue === "" || DateValue === "") {
       if (InputValue === "") {
         alert("Pls Enter a TASK");
