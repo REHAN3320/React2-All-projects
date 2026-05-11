@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.active{
+  @apply active:text-red-400 hover:scale-95
+}

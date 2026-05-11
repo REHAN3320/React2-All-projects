@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.router{
+  @apply text-lg font-medium hover:underline
+}
